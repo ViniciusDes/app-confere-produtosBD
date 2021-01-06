@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, Image,Animated, Keyboard } from 'rea
 import { RectButton } from 'react-native-gesture-handler';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import { Sae } from 'react-native-textinput-effects';
-import { color } from 'react-native-reanimated';
+import { useNavigation } from '@react-navigation/native';
  
 
 
@@ -11,9 +11,9 @@ export default function Login() {
   
   const [user, setUser] = useState('')
   const [password, setPassword] = useState('')
-
   const [openEditInput, setOpenEditInput] = useState(false)
-  const [keyboardOpen, setKeyboardOpen] = useState(false)
+
+  const navigation = useNavigation();
 
   useEffect(() => {
     Keyboard.addListener("keyboardDidShow", _keyboardDidShow);
@@ -34,19 +34,6 @@ export default function Login() {
     setOpenEditInput(false)
 
   };
-
-  const animatedValue = new Animated.Value(0)
-  
-  const fadeAnim = useRef(new Animated.Value(0)).current;
- 
-  const fadeIn = () => {
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: 5000,
-      useNativeDriver: true
-    }).start();
-  };
-
 
     return (
       <View style={styles.container}>
@@ -97,7 +84,7 @@ export default function Login() {
             
           
             <RectButton style={[styles.button]} onPress={() => {
-             
+             navigation.navigate('menu')
             }}>
               <Text>Logar</Text>
             </RectButton>

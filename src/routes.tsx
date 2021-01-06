@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Login from "./pages/Login"
 import Main from "./pages/Main"
+import Menu from "./pages/Menu"
+import ListProdutos from "./pages/ListProdutos"
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -24,7 +26,14 @@ export default function Routes(){
             component={Login}
         />
 
-        
+        <Screen 
+            name="menu"
+            component={Menu}
+        />
+        <Screen 
+            name="listproducts"
+            component={ListProdutos}
+        />
       </Navigator>
     </NavigationContainer>
   )

@@ -1,8 +1,8 @@
 Arguments: 
-  D:\nodejs\node.exe D:\Yarn\bin\yarn.js add @types/react-native-keyboard-listener
+  D:\nodejs\node.exe D:\Yarn\bin\yarn.js add @types/react-native-paper
 
 PATH: 
-  C:\ProgramData\Oracle\Java\javapath;D:\python\Lib\site-packages\PyQt4;D:\python\Scripts\;D:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\embarcadero\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;D:\embarcadero\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;"C:\Program Files (x86)\Common Files\Oracle\Java\javapath;%JAVA_HOME\bin;";C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;D:\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\nodejs\;D:\Yarn\bin\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\Vinicius\AppData\Local\Microsoft\WindowsApps;C:\Users\Vinicius\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;C:\Users\Vinicius\.dotnet\tools;C:\Users\Vinicius\AppData\Roaming\npm;C:\Users\Vinicius\AppData\Local\Yarn\bin;C:\Users\Vinicius\AppData\Local\Microsoft\WindowsApps;D:\Program Files\heroku\bin
+  C:\ProgramData\Oracle\Java\javapath;D:\python\Lib\site-packages\PyQt4;D:\python\Scripts\;D:\python\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\embarcadero\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;D:\embarcadero\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;"C:\Program Files (x86)\Common Files\Oracle\Java\javapath;%JAVA_HOME\bin;";C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;D:\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\nodejs\;D:\Yarn\bin\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Vinicius\AppData\Local\Microsoft\WindowsApps;C:\Users\Vinicius\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;C:\Users\Vinicius\.dotnet\tools;C:\Users\Vinicius\AppData\Roaming\npm;C:\Users\Vinicius\AppData\Local\Yarn\bin;C:\Users\Vinicius\AppData\Local\Microsoft\WindowsApps;D:\Program Files\heroku\bin
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-native-keyboard-listener: Not found
+  Error: https://registry.yarnpkg.com/@types%2freact-native-paper: Not found
       at Request.params.callback [as _callback] (D:\Yarn\lib\cli.js:66096:18)
       at Request.self.callback (D:\Yarn\lib\cli.js:140748:22)
       at Request.emit (events.js:315:20)
@@ -37,9 +37,12 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@expo/vector-icons": "^12.0.2",
       "@react-native-community/masked-view": "0.1.10",
       "@react-navigation/native": "^5.8.10",
       "@react-navigation/stack": "^5.12.8",
+      "@types/react-native-table-component": "^1.2.0",
+      "axios": "^0.21.0",
       "expo": "~40.0.0",
       "expo-status-bar": "~1.0.3",
       "react": "16.13.1",
@@ -47,9 +50,11 @@ npm manifest:
       "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
       "react-native-gesture-handler": "^1.9.0",
       "react-native-keyboard-listener": "^1.1.0",
+      "react-native-paper": "*",
       "react-native-reanimated": "~1.13.0",
       "react-native-safe-area-context": "3.1.9",
       "react-native-screens": "~2.15.0",
+      "react-native-table-component": "^1.2.1",
       "react-native-textinput-effects": "^0.6.1",
       "react-native-vector-icons": "^7.1.0",
       "react-native-web": "~0.13.12"
@@ -58,7 +63,7 @@ npm manifest:
       "@babel/core": "~7.9.0",
       "@types/react": "~16.9.35",
       "@types/react-dom": "~16.9.8",
-      "@types/react-native": "~0.63.2",
+      "@types/react-native": "^0.63.43",
       "typescript": "~4.0.0"
     },
     "private": true
@@ -1095,6 +1100,14 @@ Lockfile:
       lodash "^4.17.19"
       to-fast-properties "^2.0.0"
   
+  "@callstack/react-theme-provider@^3.0.5":
+    version "3.0.5"
+    resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.5.tgz#a173e455e9603c9c45357a3b6ace1273086527ca"
+    integrity sha512-Iec+ybWN0FvNj87sD3oWo/49edGUP0UOSdMnzCJEFJIDYr992ECIuOV89burAAh2/ibPCxgLiK6dmgv2mO/8Tg==
+    dependencies:
+      deepmerge "^3.2.0"
+      hoist-non-react-statics "^3.3.0"
+  
   "@cnakazawa/watch@^1.0.3":
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -1157,7 +1170,7 @@ Lockfile:
       lodash "^4.17.15"
       write-file-atomic "^2.3.0"
   
-  "@expo/vector-icons@^12.0.0":
+  "@expo/vector-icons@^12.0.0", "@expo/vector-icons@^12.0.2":
     version "12.0.2"
     resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-12.0.2.tgz#ffb65a547091abcc529686be21b63ebf4cad041b"
     integrity sha512-VJZDyMvSzgZrIKeytBcxZ7Ll0iBDBAXaVLVR7nMgmhAPERnxdbqUfP6/wrxl6tETzRnG0Xzu9d64jcQRtechlg==
@@ -1487,6 +1500,15 @@ Lockfile:
     dependencies:
       "@types/react" "^16"
   
+  "@types/react-native-table-component@^1.2.0":
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/@types/react-native-table-component/-/react-native-table-component-1.2.0.tgz#9328052cf95d5d710fc13b4b95459ab1ef82daf1"
+    integrity sha512-7uFDcUdYUGY9DH0WgbptklqsOX3xdVCbJJuom6tBmvcdKrCUirvezWkSY5NlMVdMxRqsDCZYOnN5gVm3KeiKwg==
+    dependencies:
+      "@types/react" "*"
+      "@types/react-native" "*"
+      csstype "^3.0.3"
+  
   "@types/react-native-vector-icons@^6.4.5":
     version "6.4.6"
     resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.6.tgz#848e3b14572def56212cafbf5cb1254b445bfb41"
@@ -1495,10 +1517,17 @@ Lockfile:
       "@types/react" "*"
       "@types/react-native" "*"
   
-  "@types/react-native@*", "@types/react-native@~0.63.2":
+  "@types/react-native@*":
     version "0.63.42"
     resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.42.tgz#d0baf405edc646d15d5a7f8e67983b8701c1ea2a"
     integrity sha512-zb7m2Uwfz6MQh/Nq1DDAmzTRO+EQWV7ZyRl9ZZ2QLd1480xjRjPDQqRkp4vuk3gyRlQtwi0v9I3tOh2IxHFujw==
+    dependencies:
+      "@types/react" "*"
+  
+  "@types/react-native@^0.63.43":
+    version "0.63.43"
+    resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.43.tgz#0278dd540f8479b35ae5d6ef373dd9b3be4cffb1"
+    integrity sha512-zFD+rFf7xmk3ZL5laaGdWB8NLNoN36TjHc2M5PcT5gXcDk7ZJBPsiabNcPDQPSIU/om8YPwBpaFdd1IiyuIM+g==
     dependencies:
       "@types/react" "*"
   
@@ -1775,6 +1804,13 @@ Lockfile:
     version "2.1.2"
     resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
     integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+  
+  axios@^0.21.0:
+    version "0.21.0"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+    integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+    dependencies:
+      follow-redirects "^1.10.0"
   
   babel-plugin-dynamic-import-node@^2.3.3:
     version "2.3.3"
@@ -2176,7 +2212,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
     integrity sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==
   
-  color@^3.1.3:
+  color@^3.1.2, color@^3.1.3:
     version "3.1.3"
     resolved "https://registry.yarnpkg.com/color/-/color-3.1.3.tgz#ca67fb4e7b97d611dcde39eceed422067d91596e"
     integrity sha512-xgXAcTHa2HeFCGLE9Xs/R82hujGtu9Jd9x4NW3T34+OMs7VoPsjwzRczKHvTAHeJwWFwX5j15+MgAppE8ztObQ==
@@ -2352,7 +2388,7 @@ Lockfile:
       hyphenate-style-name "^1.0.2"
       isobject "^3.0.1"
   
-  csstype@^3.0.2:
+  csstype@^3.0.2, csstype@^3.0.3:
     version "3.0.5"
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.5.tgz#7fdec6a28a67ae18647c51668a9ff95bb2fa7bb8"
     integrity sha512-uVDi8LpBUKQj6sdxNaTetL6FpeCqTjOvAQuQUa/qAqq8oOd4ivkbhgnqayl0dnPal8Tb/yB1tF+gOvCBiicaiQ==
@@ -2940,6 +2976,11 @@ Lockfile:
     dependencies:
       locate-path "^6.0.0"
       path-exists "^4.0.0"
+  
+  follow-redirects@^1.10.0:
+    version "1.13.1"
+    resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
+    integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
   
   fontfaceobserver@^2.1.0:
     version "2.1.0"
@@ -4751,7 +4792,7 @@ Lockfile:
       invariant "^2.2.4"
       prop-types "^15.7.2"
   
-  react-native-iphone-x-helper@^1.3.0:
+  react-native-iphone-x-helper@^1.3.0, react-native-iphone-x-helper@^1.3.1:
     version "1.3.1"
     resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
     integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
@@ -4762,6 +4803,15 @@ Lockfile:
     integrity sha512-39oarw+f1lfxJkYJkKyxdAqhRsaxNK/mSNK5yvdB62RZxCWKlvnUP1EClWYGo6IrxA/v9PI8BqWHGE+MPQK1/w==
     dependencies:
       prop-types "^15.6.0"
+  
+  react-native-paper@*:
+    version "4.5.0"
+    resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-4.5.0.tgz#5f1f1e658dbd7a322a299e08ce76e22be44c01d5"
+    integrity sha512-mQtOL9yAs5B5b+HPWVMMbFFuKVpTDn1YuR0h5SCtDkR+3deZjJNRLtrNgPnsrwRfBhA/F8j/p2yps4DY8AiyMg==
+    dependencies:
+      "@callstack/react-theme-provider" "^3.0.5"
+      color "^3.1.2"
+      react-native-iphone-x-helper "^1.3.1"
   
   react-native-reanimated@~1.13.0:
     version "1.13.2"
@@ -4779,6 +4829,11 @@ Lockfile:
     version "2.15.0"
     resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.15.0.tgz#9b97c1881c4fcdf304bf363f0013225901625f44"
     integrity sha512-qTSQPy0WKHtlb8xt5gY0Gt6sdvfQUQAnFSqgsggW9UEvySbkHzpqOrOYNA79Ca8oXO0dCFwp6X8buIiDefa7+Q==
+  
+  react-native-table-component@^1.2.1:
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/react-native-table-component/-/react-native-table-component-1.2.1.tgz#5f1e0f159b1dff9df0d5601c4a5ab99d1aa99a25"
+    integrity sha512-sapwO0bONfQtpWg3GVMwP5D3lGEJlxPB3c7fb0soXBynvCa+SBktacVZ9OmYJnIbRJ3uW5pS4tzNc8GmE+UScw==
   
   react-native-textinput-effects@^0.6.1:
     version "0.6.1"
