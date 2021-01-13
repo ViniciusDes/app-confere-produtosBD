@@ -33,7 +33,7 @@ export default function Menu() {
 
   useEffect(() => {
     api
-      .get('products')
+      .get(`products/`)
       .then(resp => {
         setProducts(resp.data);
       })
@@ -41,6 +41,28 @@ export default function Menu() {
         console.log('erro' + err);
       });
   }, []);
+
+  useEffect(() => {
+    if (checked === 'first') {
+      const result = api
+        .get(`products/search?tipoPesq=0&codProduto=${searchDescProduct}`)
+        .then(resp => {
+          setProducts(resp.data);
+        })
+        .catch(err => {
+          console.log('erro' + err);
+        });
+    } else {
+      const result = api
+        .get(`products/search?tipoPesq=1&descProduto=${searchDescProduct}`)
+        .then(resp => {
+          setProducts(resp.data);
+        })
+        .catch(err => {
+          console.log('erro' + err);
+        });
+    }
+  }, [searchDescProduct]);
 
   return (
     <View style={styles.container}>

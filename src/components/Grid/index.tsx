@@ -1,7 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, FlatList, View } from 'react-native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 const GridList = (props: any) => {
+  const navigation = useNavigation();
+
+  function navigateToProduct() {
+    navigation.navigate('products');
+  }
   return (
     <FlatList
       data={props.items}
@@ -9,7 +15,9 @@ const GridList = (props: any) => {
       key={Math.random()}
       renderItem={({ item }) => (
         <View style={styles.listWrapper}>
-          <Text style={styles.itemCod}>{item.mat_001}</Text>
+          <Text style={styles.itemCod} onPress={navigateToProduct}>
+            {item.mat_001}
+          </Text>
           <Text style={styles.itemDesc}>{item.mat_003}</Text>
           <Text style={styles.item}>{item.mat_008}</Text>
         </View>
