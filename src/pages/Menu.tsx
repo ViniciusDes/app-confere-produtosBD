@@ -21,6 +21,16 @@ export default function Menu() {
           <Text>Produtos</Text>
           <Feather name="arrow-right" size={30} style={styles.iconRight} />
         </RectButton>
+
+        <RectButton
+          style={[styles.button]}
+          onPress={() => {
+            navigation.navigate('listproducts');
+          }}
+        >
+          <Text>Configurações</Text>
+          <Feather name="arrow-right" size={30} style={styles.iconRight} />
+        </RectButton>
       </View>
     </View>
   );
@@ -35,12 +45,15 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#fff',
+
     height: 56,
     width: '100%',
+    paddingLeft: 20,
+    margin: 10,
+
     borderRadius: 15,
     alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingLeft: 20,
     flexDirection: 'row',
     borderWidth: 1,
     borderColor: '#000000',

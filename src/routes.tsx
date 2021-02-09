@@ -15,12 +15,10 @@ export default function Routes() {
     <NavigationContainer>
       <Navigator screenOptions={{ headerShown: false }}>
         <Screen name="main" component={Main} />
-
         <Screen name="login" component={Login} />
-
         <Screen name="menu" component={Menu} />
         <Screen name="listproducts" component={ListProdutos} />
-        <Screen name="products" component={product} />
+        <Screen name="product" component={product} />
       </Navigator>
     </NavigationContainer>
   );
