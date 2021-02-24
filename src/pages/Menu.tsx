@@ -25,6 +25,16 @@ export default function Menu() {
         <RectButton
           style={[styles.button]}
           onPress={() => {
+            navigation.navigate('registerProduct');
+          }}
+        >
+          <Text>Cadastro de produtos</Text>
+          <Feather name="arrow-right" size={30} style={styles.iconRight} />
+        </RectButton>
+
+        <RectButton
+          style={[styles.button]}
+          onPress={() => {
             navigation.navigate('listproducts');
           }}
         >

@@ -8,6 +8,7 @@ import Main from './pages/Main';
 import Menu from './pages/Menu';
 import ListProdutos from './pages/ListProdutos';
 import product from './pages/Product';
+import RegisterProducts from './pages/RegisterProduct';
 const { Navigator, Screen } = createStackNavigator();
 
 export default function Routes() {
@@ -19,6 +20,7 @@ export default function Routes() {
         <Screen name="menu" component={Menu} />
         <Screen name="listproducts" component={ListProdutos} />
         <Screen name="product" component={product} />
+        <Screen name="registerProduct" component={RegisterProducts} />
       </Navigator>
     </NavigationContainer>
   );

@@ -171,6 +171,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
     height: '20%',
+    paddingTop: 10,
+
     // margin: 10,
     // borderBottomWidth: 1,
     // borderLeftWidth: 1,
